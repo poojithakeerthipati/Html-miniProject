@@ -3,10 +3,10 @@
     <head>
         <meta charset="UTF-8">
         <meta name="author" content="pooji keerthipati">
-        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML."
-        <title>My First Web Page</title>
+        <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
+        <title> My First Web Page</title>
         <link rel="icon" href="html5.webp" type="image/x-icon">
-        <link rel="stylesheet" href="main.css" type="text.css">
+        <link rel="stylesheet" href="main.css" type="text/css">
     </head>
     <body>
         <header>
@@ -58,7 +58,19 @@
         </aside>
         <br>
         <table>
+            <caption>My Dialy Schedule</caption>
+            <thead>
+
+                
             <tr>
+                <th>&nbsp;</th>
+                <th scope="col">Time</th>
+                <th scope="col">Activity</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Morning</th>
                 <td>
                     <time datetime="08:00">8 am</time>-
                     <time datetime="11:00">11 am</time>
@@ -66,6 +78,7 @@
                 <td>Write Code</td>
             </tr>
             <tr>
+                <th scope="row">Break</th>
                 <td>
                     <time datetime="11:00">11 am</time>-
                     <time datetime="12:00">12 pm</time>
@@ -73,12 +86,30 @@
                 <td>Eat Lunch</td>
             </tr>
             <tr>
+                <th  scope="row">Afternoon</th>
                 <td>
                     <time datetime="12:00">12 pm</time>-
                     <time datetime="05:00">5 pm</time>
                 </td>
                 <td>Study for other Courses.</td>
             </tr>
+            <tr>
+                <th  scope="row">Evening</th>
+                <td rowspan="2">All other times</td>
+                <td>Free Time</td>
+            </tr>
+            <tr>
+                <th  scope="row">Night</th>
+                <td>Sleep</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">And Thats what I do every day , 5 days a week.
+                    Just eat, sleep and code .. and recharge!
+                </td>
+            </tr>
+        </tfoot>
         </table>
     </section>
         </article>
